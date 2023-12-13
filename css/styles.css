@@ -981,7 +981,7 @@ fill: #f4f4fd;
     }}
 
 @media screen and (min-width:1158px){
-.one-header {
+.one-header-mobile-logo {
         border-bottom: 1px solid #e7e9fc;
         box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     }
@@ -990,10 +990,18 @@ fill: #f4f4fd;
  @media screen and (min-width:1158px){
     .one-header-container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
         }
  }
 
+
+  @media screen and (min-width:1158px){
+    .header-nav {
+            display: flex;
+            align-items: center;
+        }
+  }
    @media screen and (min-width:1158px){
     .logo-part-one {
         margin-right: 76px;
@@ -1085,10 +1093,23 @@ fill: #f4f4fd;
     }
 @media screen and (min-width: 1158px) 
 {.one-section {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/people.jpg);
-        max-width: 1440px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+     rgba(46, 47, 66, 0.7)),
+    url(../images/people.jpg);
+    max-width: 1440px;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
     }}
+@media screen and (min-width: 1158px){
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1158px){
+.button-one-section:hover,
+.button-one-section:focus {
+        background-color: #404BBF;
+    }
+}
 
 @media screen and (min-width: 1158px){
     .two-section-container {
@@ -1141,7 +1162,25 @@ fill: #f4f4fd;
   
     }
 }
-
+@media screen and (min-width: 1158px){
+    .advent-hover {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 40px 32px;
+    color: #f4f4fd;
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+    
+        }
+}
 @media screen and (min-width: 1158px)
 {.advent-four:hover {
         box-shadow:
@@ -1163,10 +1202,16 @@ fill: #f4f4fd;
 
     }
 }
-
+@media screen and (min-width: 1158px){
+.social-links:hover,
+.social-links:focus {
+        background-color: #404bbf
+    }
+}
 @media screen and (min-width: 1158px){
 .footer-name {
         width: 1440px;
+        margin: auto;
 }}
 @media screen and (min-width: 1158px){
 .footer-container {  
@@ -1181,6 +1226,20 @@ gap: 0;
     .logo-footer-andp {
     margin-right: 120px;
         }
+}
+
+@media screen and (min-width: 1158px){
+    .links-footer:hover,
+    .links-footer:focus {
+            background-color: #31d0aa;
+        }
+}
+
+@media screen and (min-width: 1158px){
+.footer-list-links:hover,
+    .footer-list-links:focus {
+        background-color: #31D0AA;
+    }
 }
 
 @media screen and (min-width: 1158px){
